@@ -40,7 +40,7 @@ public class BoardController {
 
     service.regist(board);
 
-    rttr.addFlashAttribute("msg", "success");
+    rttr.addFlashAttribute("msg", "SUCCESS");
     return "redirect:/board/listAll";
   }
 
