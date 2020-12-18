@@ -46,7 +46,7 @@
     <div id="page-content-wrapper">
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-        <button class="btn btn-primary" id="menu-toggle">Menu</button>
+        <button class="btn btn-info" id="menu-toggle">Menu</button>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -78,7 +78,6 @@
       <div class="container-fluid">
 	      <table class="table table-bordered">
 			<tr>
-				<th style="width: 10px">BNO</th>
 				<th>TITLE</th>
 				<th>WRITER</th>
 				<th>REGDATE</th>
@@ -89,7 +88,6 @@
 			<c:forEach items="${list}" var="boardVO">
 			
 				<tr>
-					<td>${boardVO.bno}</td>
 					<td><a href='/board/read?bno=${boardVO.bno}'>${boardVO.title}</a></td>
 					<td>${boardVO.writer}</td>
 					<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm"

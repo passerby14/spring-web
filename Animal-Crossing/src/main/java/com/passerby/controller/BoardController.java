@@ -62,7 +62,7 @@ public class BoardController {
 
     service.remove(bno);
 
-    rttr.addFlashAttribute("msg", "SUCCESS");
+    rttr.addFlashAttribute("msg", "REMOVE");
 
     return "redirect:/board/listAll";
   }
@@ -79,7 +79,7 @@ public class BoardController {
     logger.info("mod post............");
 
     service.modify(board);
-    rttr.addFlashAttribute("msg", "SUCCESS");
+    rttr.addFlashAttribute("msg", "MODIFY");
 
     return "redirect:/board/listAll";
   }
