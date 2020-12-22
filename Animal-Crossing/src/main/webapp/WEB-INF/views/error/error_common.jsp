@@ -10,12 +10,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-   <h4>${exception.getMessage() }</h4>
+   <h4>에러 발생 ㅠㅠ${exception.getMessage() }</h4>
    
-   <ul>
-   <c:forEach items="${exception.getStackTrace() }" var="stack">
-     <li>${stack.toString()}</li>
-   </c:forEach>
-   </ul>
 </body>
 </html>
