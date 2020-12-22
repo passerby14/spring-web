@@ -12,10 +12,10 @@ public class ExceptionController {
   private static final Logger logger = LoggerFactory.getLogger(ExceptionController.class);
 
   @ExceptionHandler(Exception.class)
-  private ModelAndView errorModelAndView(Exception ex) {
+  private ModelAndView errormv(Exception ex) {
 
     ModelAndView modelAndView = new ModelAndView();
-    modelAndView.setViewName("/error/error_common");
+    modelAndView.setViewName("/error/errorpage");
     modelAndView.addObject("exception", ex);
 
     return modelAndView;
